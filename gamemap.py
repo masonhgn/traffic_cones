@@ -1,7 +1,7 @@
 import pygame as p
 import os
-os.chdir('C:/Users/desktop/pythonstuff')
-map1 = p.image.load('trafficcones/images/background.png')
+#os.chdir('C:/Users/desktop/pythonstuff')
+map1 = p.image.load('images/background.png')
 
 class gameMap(object):
     def __init__(self,x,y):

@@ -5,7 +5,7 @@ entity_collide = False
 entities = []
 
 
-cone = p.image.load('trafficcones/images/cone.png')
+cone = p.image.load('images/cone.png')
 
 if entity_collide:
     entity_velocity = 0

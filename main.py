@@ -5,7 +5,7 @@ from entity import *
 
 import os
 import random
-os.chdir('C:/Users/desktop/pythonstuff')
+#os.chdir('C:/Users/desktop/pythonstuff')
 SCREEN_W = 800
 SCREEN_H = 800
 
@@ -36,13 +36,13 @@ c = p.time.Clock()
 
 #sound stuff, initialize sounds, load them
 p.mixer.init()
-music_sound = p.mixer.Sound('trafficcones/music/gamemusic.wav')
-death_sound = p.mixer.Sound('trafficcones/music/gamesound.wav')
-p.mixer.music.load('trafficcones/music/gamemusic.wav')
+music_sound = p.mixer.Sound('music/gamemusic.wav')
+death_sound = p.mixer.Sound('music/gamesound.wav')
+p.mixer.music.load('music/gamemusic.wav')
 p.mixer.music.play(-1)
 
-player_img = p.image.load('trafficcones/images/character.png')
-lost_image = p.image.load('trafficcones/images/gameover.png')
+player_img = p.image.load('images/character.png')
+lost_image = p.image.load('images/gameover.png')
 
 
 
@@ -121,7 +121,7 @@ def resetGame():
         e.y = random.randint(-1000,-60)
     current_player.x = 330
 
-    p.mixer.music.load('trafficcones/music/gamemusic.wav')
+    p.mixer.music.load('music/gamemusic.wav')
     p.mixer.music.play(-1)
 
 
